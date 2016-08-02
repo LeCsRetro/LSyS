@@ -1,0 +1,66 @@
+<body>
+{@SPC_include_header@}
+
+<table id="stacktable" class="page_cont">
+    <tbody>
+    <tr>
+        <td colspan="2" style="padding:5px;">
+            <div class="box" style="width:100%;">
+                <div class="top_header"><center><h2>{@SPC_us_username@}</h2></center></div>
+                <div class="content">
+                    <table style="width:100%">
+                        <tbody>
+                        <tr>
+                            <td style="width:10%;">
+                                <div id="us_cont" style="background-image:url('http://www.habbo.it/habbo-imaging/avatarimage?figure={@SPC_us_look@}&direction=&head_direction=&gesture=&action=&size=');">
+                                </div>
+                            </td>
+                            <td style="padding:5px;width:65%">
+                                <div class="info_box">{@me_motto@}{@SPC_us_motto@}</div>
+                                <div class="info_box">{@me_laston@}{@SPC_us_last_online@}</div>
+                                <div class="info_box">{@me_registered@}{@SPC_us_account_created@}</div>
+                            </td>
+                            <td style="width:25%;">
+                                <a href="client.php" target="_blank"><input type="submit" class="submit" value="{@me_client_but@}" style="width:96%;margin-bottom:5px;"></a>
+                                <div class="credits_box">{@SPC_us_credits@}</div>
+                                <div class="emes_box">{@SPC_us_vip_points@}</div>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+
+        <td style="width:45%;padding:5px;">
+            <div class="box" style="width: 90%;">
+                <div class="top_header"><center><h2>{@me_radio@}</h2></center></div>
+                <div class="content" style="font-size: 20px;">
+                    <center>
+                        <iframe src="{@SPC_radiourl@}" scrolling="no" style="width: 87%;height: 110px;"></iframe>
+                    </center>
+                </div>
+            </div>
+        </td>
+        <td style="width:55%;padding:5px;">
+            <div class="box" style="width:100%;">
+                <div class="top_header"><center><h2>{@me_news@}</h2></center></div>
+                <div class="content" style="font-size: 20px;">
+                    <table style="width:100%">
+                        <tbody>
+                        {@SPC_me_news@}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </td>
+    </tr>
+        {@SPC_include_footer@}
+    </tbody>
+</table>
+
+
+</body>
+</html>

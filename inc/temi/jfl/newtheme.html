@@ -1,0 +1,23 @@
+{@prova.1@}
+<br>
+{@azz@}
+<br>
+{%if num = 1 %}
+num = 1<br>
+{%else%}
+num != 1<br>
+{%endif%}
+
+{-%for num in numbers %-}
+VALORE {-_%fv num %_-}: {-_%fv num1 %_-} - {-_%fv numa.a %_-}
+{-%endfor%-}
+
+{-%for title in news %-}
+<tr>
+    <td>
+        <div class="list">
+            <a href="news.php?id={-_%fv id %_-}">{-_%fv title %_-}</a>
+        </div>
+    </td>
+</tr>
+{-%endfor%-}

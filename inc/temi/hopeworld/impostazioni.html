@@ -1,0 +1,30 @@
+<body>
+{@SPC_include_header@}
+<table class="page_cont">
+    <tbody>
+    <tr>
+        <td colspan="2" style="padding:5px;">
+            <div class="box" style="width:100%;">
+                <div class="top_header"><center><h2>{@settings_title@}</h2></center></div>
+                <div class="content">
+                    <div class="list_dark">{@settings_change_password@}</div>
+
+                    <input type="password" id="oldpassword" placeholder="Password" style="width:75%;" onfocus="this.style.backgroundColor='#fff';this.style.borderColor='#0074a6'" onblur="this.style.backgroundColor='#ccd8df';this.style.borderColor='#275d8e'" onkeyup="if(window.event.keyCode == '13'){ change_password(); }"><br>
+                    <input type="password" id="password" placeholder="New Password" style="width:75%" onfocus="this.style.backgroundColor='#fff';this.style.borderColor='#0074a6'" onblur="this.style.backgroundColor='#ccd8df';this.style.borderColor='#275d8e'" onkeyup="if(window.event.keyCode == '13'){ change_password(); }"><br>
+                    <input type="password" id="password1" placeholder="New Password" style="width:75%" onfocus="this.style.backgroundColor='#fff';this.style.borderColor='#0074a6'" onblur="this.style.backgroundColor='#ccd8df';this.style.borderColor='#275d8e'" onkeyup="if(window.event.keyCode == '13'){ change_password(); }"><br>
+                    <input type="submit" onclick="change_password()" value="{@settings_save@}" style="width:50%">
+
+                    <div class="list_light">{@settings_change_email@}</div>
+                    <input type="text" id="email" placeholder="Email" style="width:75%" onfocus="this.style.backgroundColor='#fff';this.style.borderColor='#0074a6'" onblur="this.style.backgroundColor='#ccd8df';this.style.borderColor='#275d8e'" onkeyup="if(window.event.keyCode == '13'){ change_email(); }"><br>
+                    <input type="submit" onclick="change_email()" value="{@settings_save@}" style="width:50%">
+                </div>
+            </div>
+        </td>
+    </tr>
+    {@SPC_include_footer@}
+    </tbody>
+</table>
+
+
+</body>
+</html>

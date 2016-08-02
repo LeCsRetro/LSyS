@@ -1,0 +1,42 @@
+19/06/2016 13:55:41- QUERY: {"QUERY":"SELECT users_online FROM server_status LIMIT 1"}
+
+19/06/2016 13:55:45- QUERY: {"QUERY":"SELECT username,password FROM users WHERE username = :username LIMIT 1",":username":"LeCs."}
+
+19/06/2016 13:55:45- QUERY: {"QUERY":"SELECT * FROM bans WHERE value = :valore OR value = :ip LIMIT 1",":valore":"LeCs.",":ip":"127.0.0.1"}
+
+19/06/2016 13:55:45- QUERY: {"QUERY":"SELECT * FROM users WHERE username = :username LIMIT 1",":username":"LeCs."}
+
+19/06/2016 13:55:45- QUERY: {"QUERY":"SELECT is_admin FROM permissions_cms WHERE id = :id LIMIT 1",":id":"7"}
+
+19/06/2016 13:55:45- QUERY: {"QUERY":"SELECT id,title,image FROM cms_news ORDER BY id DESC LIMIT 3"}
+
+19/06/2016 13:55:57- QUERY: {"QUERY":"SELECT * FROM users WHERE username = :username LIMIT 1",":username":"LeCs."}
+
+19/06/2016 13:55:58- QUERY: {"QUERY":"UPDATE users SET online = '0' WHERE username = :username",":username":"LeCs."}
+
+19/06/2016 13:55:58- QUERY: {"QUERY":"SELECT users_online FROM server_status LIMIT 1"}
+
+25/07/2016 15:36:45- QUERY: {"QUERY":"SELECT * FROM cms_settings WHERE variable = 'site_closed' LIMIT 1"}
+
+25/07/2016 15:36:45- QUERY: {"QUERY":"SELECT users_online FROM server_status LIMIT 1"}
+
+25/07/2016 15:37:35- QUERY: {"QUERY":"SELECT username,password FROM users WHERE username = :username LIMIT 1",":username":"LeCs."}
+
+25/07/2016 15:37:36- QUERY: {"QUERY":"SELECT * FROM bans WHERE value = :valore OR value = :ip LIMIT 1",":valore":"LeCs.",":ip":"127.0.0.1"}
+
+25/07/2016 15:37:36- QUERY: {"QUERY":"SELECT * FROM users WHERE username = :username LIMIT 1",":username":"LeCs."}
+
+25/07/2016 15:37:36- QUERY: {"QUERY":"SELECT * FROM cms_settings WHERE variable = 'site_closed' LIMIT 1"}
+
+25/07/2016 15:37:36- QUERY: {"QUERY":"SELECT is_admin FROM permissions_cms WHERE id = :id LIMIT 1",":id":"7"}
+
+25/07/2016 15:37:36- QUERY: {"QUERY":"SELECT id,title,image FROM cms_news ORDER BY id DESC LIMIT 3"}
+
+25/07/2016 15:39:02- QUERY: {"QUERY":"SELECT * FROM users WHERE username = :username LIMIT 1",":username":"LeCs."}
+
+25/07/2016 15:39:02- QUERY: {"QUERY":"SELECT * FROM cms_settings WHERE variable = 'site_closed' LIMIT 1"}
+
+25/07/2016 15:39:02- QUERY: {"QUERY":"SELECT is_admin FROM permissions_cms WHERE id = :id LIMIT 1",":id":"7"}
+
+25/07/2016 15:39:02- QUERY: {"QUERY":"SELECT id,title,image FROM cms_news ORDER BY id DESC LIMIT 3"}
+

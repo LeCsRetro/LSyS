@@ -1,0 +1,108 @@
+/* CSS BY: Lukkit (Lucasmfunes)*/
+
+body{
+	background: url("../images/maint_background.png");
+	background-repeat: no-repeat;
+}
+
+#contenido .titulo{
+	font-size:42px;
+	color:#fff;
+	font-family:calibri;
+	position:relative;
+	margin-left:200px;
+	margin-top:00px;
+	text-shadow:1px 1px 5px #000000;
+}
+#contenido .texto{
+	font-family:calibri;
+	margin-left:30px;
+	margin-top:0px;
+	font-size:21px;
+	text-shadow: 1px 1px 1px #000000;
+	color: #fff;
+}
+
+#xat{
+	margin-left:430px;
+	margin-top:50px;
+}
+
+#Bx1 {
+	width: 690px;
+	height: 430px;
+	padding: 0;
+	background-color: rgba(0, 0, 0, 0.6);
+	margin-top: 0px;
+	margin-left: 350px;
+	border-radius: 7px;
+	border: 1px solid #8D8A8A;
+	box-shadow: 2px 2px 5px #C2C2C2;
+}
+
+#imgmant{
+	background:url("../images/mantenimiento1.png");
+	width: 280px;
+	height: 190px;
+	margin-top: -250px;
+	margin-left: 280px;
+}
+
+#botonchat{
+width: 420px;
+height: 100px;
+background-color: #C72323;
+box-shadow: 0px 4px 0px #9E1414;
+position: relative;
+border-radius: 4px;
+cursor: pointer;
+color: #FFF;
+border: 0;
+text-decoration: none;
+float: left;
+font-family: Calibri;
+bottom: 7px;
+left: -350px;
+font-size: 34px;
+display: inline-block;
+text-align: center;
+margin-top: 50px;
+margin-right: 165px;
+float: right;
+line-height: 99px;
+font-weight: bold;
+}
+
+footer {
+border-top: 2px;
+width: 100%;
+height: 50px;
+background-color: #BD4343;
+position: fixed;
+bottom: 0;
+text-align: center;
+color: #fff;
+font-size: 18px;
+font-family: Arial;
+line-height: 50px;
+margin-left: -8px;
+}
+
+/* === jQuery Countdown Styles === */
+
+#defaultCountdown {
+    width: 757px;
+    height: 60px;
+}
+
+.hasCountdown {
+    text-align: center;
+    margin-left: 330px;
+    margin-right: 20px;
+    color: #ffffff;
+    margin-top: 45px;
+    font-weight: normal;
+	font-size: 21px;
+	text-shadow: 1px 1px 1px #000000;
+	margin-top: -48px;
+}

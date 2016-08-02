@@ -1,0 +1,45 @@
+<div id="header">
+                <div id="logo"></div>
+</div>
+<div id='cssmenu'>
+    <ul>
+        {%if page = me or impostazioni %}
+        <li class="active has-sub"><a href="me.php">{@SPC_us_username@}</a>
+        {%else%}
+        <li class="has-sub"><a href='me.php'>{@SPC_us_username@}</a>
+        {%endif%}
+        {%if page = impostazioni %}
+        <ul>
+            <li><a>{@nav_settings@}</a></li>
+        </ul>
+        {%else%}
+        <ul>
+            <li><a href="impostazioni.php">{@nav_settings@}</a></li>
+        </ul>
+        {%endif%}
+        </li>
+        {%if page = news or staff %}
+        <li class='active has-sub'><a href='#'>{@nav_community@}</a>
+        {%else%}
+        <li class='has-sub'><a href='#'>{@nav_community@}</a>
+        {%endif%}
+            <ul>
+                {%if page = news %}
+                <li><a>{@nav_news@}</a></li>
+                {%else%}
+                <li><a href='news.php'>{@nav_news@}</a></li>
+                {%endif%}
+                {%if page = staff %}
+                <li><a>{@nav_staff@}</a></li>
+                {%else%}
+                <li><a  href='staff.php'>{@nav_staff@}</a></li>
+                {%endif%}
+            </ul>
+        </li>
+
+        {%if is_admin = 1 %}
+        <li><a href='admin'>{@nav_admin@}</a></li>
+        {%endif%}
+        <li><a href='esci.php'>{@nav_logout@}</a></li>
+    </ul>
+</div>

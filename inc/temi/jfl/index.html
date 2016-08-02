@@ -1,0 +1,48 @@
+<body>
+
+<div id="errors">
+    <div id="compilation_error">{@compilation_error@}</div>
+    <div id="connect_error">{@connect_error@}</div>
+    <div id="login_us_notreg">{@login_us_notreg@}</div>
+    <div id="login_pass_error">{@login_pass_error@}</div>
+    <div id="login_us_banned">{@login_us_banned@}</div>
+    <div id="register_us_tkn">{@register_us_tkn@}</div>
+    <div id="register_us_char">{@register_us_char@}</div>
+    <div id="register_pw_ts">{@register_pw_ts@}</div>
+    <div id="register_pw_dm">{@register_pw_dm@}</div>
+    <div id="register_inv_mail">{@register_inv_mail@}</div>
+    <div id="register_clone">{@register_clone@}</div>
+</div>
+<table class="page_cont">
+    <tbody>
+    <tr>
+      <td style="text-align:center">
+          <div id="logo"></div>
+          <div id="online_count">{@SPC_online_count@}</div>
+          <div id="login">
+              <input class="top_input" id="username" type="text" autocomplete="off" placeholder="Username" onfocus="this.style.borderColor='#2ADE93'" onblur="this.style.borderColor='#1CE061'" onkeyup="if(window.event.keyCode == '13'){ do_login(); }"><br>
+              <input class="bottom_input" id="password" type="password" placeholder="Password" onfocus="this.style.borderColor='#2ADE93'" onblur="this.style.borderColor='#1CE061'" onkeyup="if(window.event.keyCode == '13'){ do_login(); }"><br>
+              <input class="register_but" type="submit" onclick="showRegister()" value="{@register_button@}" style="width:18%">
+              <input type="submit" onclick="do_login()" value="{@login_button@}" style="width:10%">
+          </div>
+          <div id="register" style="display:none;">
+              <input class="top_input" id="reg_username" type="text" autocomplete="off" placeholder="Username" onfocus="this.style.borderColor='#2ADE93'" onblur="this.style.borderColor='#1CE061'" onkeyup="if(window.event.keyCode == '13'){ doRegister(); }"><br>
+              <input class="middle_input" id="reg_mail" type="text" autocomplete="off" placeholder="Email" onfocus="this.style.borderColor='#2ADE93'" onblur="this.style.borderColor='#1CE061'" onkeyup="if(window.event.keyCode == '13'){ doRegister(); }"><br>
+              <input class="middle_input" id="reg_password" type="password" placeholder="Password" onfocus="this.style.borderColor='#2ADE93'" onblur="this.style.borderColor='#1CE061'" onkeyup="if(window.event.keyCode == '13'){ doRegister(); }"><br>
+              <input class="bottom_input" id="reg_password1" type="password" placeholder="Ripeti Password" onfocus="this.style.borderColor='#2ADE93'" onblur="this.style.borderColor='#1CE061'" onkeyup="if(window.event.keyCode == '13'){ doRegister(); }"><br>
+              <input type="submit" onclick="showLogin()" value="{@login_button@}" style="width:10%">
+              <input class="register_but" type="submit" onclick="doRegister()" value="{@register_button@}" style="width:18%">
+
+          </div>
+      </td>
+    </tr>
+    <tr>
+        <td>
+            <div id="footer">{@footer_message@}</div>
+        </td>
+    </tr>
+    </tbody>
+</table>
+
+</body>
+</html>

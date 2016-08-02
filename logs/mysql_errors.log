@@ -1,0 +1,2 @@
+19/06/2016 13:55:58: Errore: SQLSTATE[HY000]: General error Query: {"QUERY":"UPDATE users SET online = '0' WHERE username = :username",":username":"LeCs."}
+

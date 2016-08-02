@@ -1,0 +1,35 @@
+<body>
+{@SPC_include_header@}
+<table id="stacktable" class="page_cont">
+    <tbody>
+    <tr>
+
+        <td style="width:30%;padding:5px;">
+            <div class="box" style="width: 90%;">
+                <div class="top_header"><center><h2>{@news_lastnews@}</h2></center></div>
+                <div class="content" style="font-size: 20px;">
+                    <table style="width:100%">
+                        <tbody>
+                        {@SPC_news_list@}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </td>
+        <td style="width:70%;padding:5px;">
+            <div class="box" style="width:100%;">
+                <div class="top_header"><center><h2>{@news_newstitle@}</h2></center></div>
+                <div class="content" style="font-size: 20px;">
+                    <div class="news_info list_light">{@news_info@}{@news_authorndate@}</div>
+                    <div class="news_text">
+                    {@news_newstext@}
+                    </div>
+                </div>
+            </div>
+        </td>
+    </tr>
+    {@SPC_include_footer@}
+    </tbody>
+</table>
+</body>
+</html>

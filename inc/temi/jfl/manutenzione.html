@@ -1,0 +1,60 @@
+<body>
+<div id="contenido">
+
+    <!-- jquery countdown-->
+    <script type="text/javascript">
+        $(function () {
+            var austDay = new Date("October 16, 2014 02:15:00");
+            $('#defaultCountdown').countdown({until: austDay, layout: '{dn} {dl}, {hn} {hl}, {mn} {ml}, y {sn} {sl}'});
+            $('#year').text(austDay.getFullYear());
+        });
+    </script>
+
+    <!-- jquery slider -->
+    <script type="text/javascript">
+
+        $(function() {
+            $("#slidertext").jCarouselLite({
+                btnNext: ".next",
+                btnPrev: ".prev"
+            });
+        });
+
+    </script>
+
+    <!--script for IE6-image transparency recover-->
+    <!--[if IE 6]>
+    <script type="text/javascript" src="js/DD_belatedPNG_0.0.7a-min.js"></script>
+    <script>
+        /* EXAMPLE */
+        DD_belatedPNG.fix('#logo img,#main,.counter,.twitter,.flickr,.facebook,.youtube,.skype,.stumbleupon, #submit,.prev img,.next img,#email');
+
+    </script>
+    <![endif]-->
+
+
+
+    <div class="container">
+
+        <!--end contact details-->
+    </div>
+    <!--end header-->
+    <div style="clear:both"></div>
+
+    <div id="Bx1"><div class="titulo">
+        <b>Manutenzione</b>
+    </div>
+        </br>
+        <div class="texto">
+            <span>Gli admin stanno provvedendo alla manutenzione dell'hotel. Ecco quali sono le possibili ragioni :<br><br>Fix di alcuni bug;<br><br>Cambio o rinnovo di CMS<br><br>Cambio di Emulatore;<br><br>Nuova grafica</br><br>Tempo rimanente:</span>
+        </div><div id="imgmant"></div></div>
+
+    <a href="chat.php"><div id="botonchat">Entra in chat</div></a>
+
+    <div id="defaultCountdown"></div>
+
+    <footer>&copy; 2014-2015.LukkitHotel non fa' parte della Sulake Corporation,LukkitHotelCMS By Lucasmfunes, Tutti i diritti riservati al creatore del CMS. Tradotto by Alessandro009</footer>
+
+    </div>
+</body>
+</html>
