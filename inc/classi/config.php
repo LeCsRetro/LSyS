@@ -13,10 +13,10 @@ class config{
     const db_host = 'localhost';
     const db_port = '3306';
     const db_username = 'root';
-    const db_password = 'cazzo123';
+    const db_password = 'password';
 
     # DB Selection #
-    const db_name = 'habbochart';
+    const db_name = 'db';
 
     # MUS Configuration #
     const mus_ip = '127.0.0.1';
