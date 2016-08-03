@@ -13,10 +13,10 @@ class config{
     const db_host = 'localhost';
     const db_port = '3306';
     const db_username = 'root';
-    const db_password = 'pass';
+    const db_password = 'cazzo123';
 
     # DB Selection #
-    const db_name = 'db';
+    const db_name = 'habbochart';
 
     # MUS Configuration #
     const mus_ip = '127.0.0.1';
@@ -26,7 +26,7 @@ class config{
     public $timezone = 'Europe/Rome';
     public $lang = 'IT';
     public $sitename = 'JaBBoFL';
-    public $tema = 'jfl';
+    public $tema = 'awesome';
     public $url = 'localhost';
     public $radiourl = 'plugins/radio/jabboplayer.php';
 

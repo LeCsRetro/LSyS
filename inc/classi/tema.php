@@ -25,7 +25,7 @@ class tema{
             $page_title = $this->load_spctag($filtered[0]);
         }
         $site_name = $this->connect->sitename;
-        echo "\n<html>\r\n<head>\r\n<meta http-equiv='content-type' content='text/html;' charset='utf-8' />\r\n<title>{$site_name} ~ {$page_title}</title>\r\n<link rel='shortcut icon' href='favicon.ico' type='image/vnd.microsoft.icon' />\r";
+        echo "\n<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n<meta charset=\"UTF-8\">\r\n<meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\r\n<title>{$site_name} ~ {$page_title}</title>\r\n<link rel='shortcut icon' href='favicon.ico' type='image/vnd.microsoft.icon' />\r";
         $this->load_tags($this->lang['meta_key']);
     }
 
@@ -42,9 +42,13 @@ class tema{
         if($dir == 'js'){
             echo "\n<script type='text/javascript' src='inc/temi/{$tema}/{$dir}/{$file}'></script>\r";
         } elseif($dir == 'style'){
-            echo "\n<link rel='stylesheet' type='text/css' href='inc/temi/{$tema}/{$dir}/{$file}'>\r";
+            echo "\n<link rel='stylesheet' type='text/css' href='inc/temi/{$tema}/{$dir}/{$file}'/>\r";
         } elseif($dir == 'images'){
             echo "\n<img src='inc/temi/{$tema}/{$dir}/{$file}'>\r";
+        } elseif($dir == 'plugin-css'){
+            echo "\n <link rel='stylesheet' type='text/css' href='inc/temi/{$tema}/plugins/{$file}'/>\r";
+        } elseif($dir == 'plugin-js'){
+            echo "\n<script type='text/javascript' src='inc/temi/{$tema}/plugins/{$file}'></script>\r";
         }
     }
 
@@ -80,7 +84,7 @@ class tema{
         switch($tag){
             case('SPC_online_count'):
                 $online = $this->connect->exe(array('QUERY'=>'SELECT users_online FROM server_status LIMIT 1'));
-                $tag = $online['users_online'] . ' utenti online!';
+                $tag = $online['users_online'] . ' Utenti Online!';
                 break;
             case('SPC_include_header'):
                 $tema = $this->connect->tema;
