@@ -1,0 +1,50 @@
+
+<body>
+   <div id="errors">
+    <div id="compilation_error">{@compilation_error@}</div>
+    <div id="connect_error">{@connect_error@}</div>
+    <div id="login_us_notreg">{@login_us_notreg@}</div>
+    <div id="login_pass_error">{@login_pass_error@}</div>
+    <div id="login_us_banned">{@login_us_banned@}</div>
+    <div id="register_us_tkn">{@register_us_tkn@}</div>
+    <div id="register_us_char">{@register_us_char@}</div>
+    <div id="register_pw_ts">{@register_pw_ts@}</div>
+    <div id="register_pw_dm">{@register_pw_dm@}</div>
+    <div id="register_inv_mail">{@register_inv_mail@}</div>
+    <div id="register_clone">{@register_clone@}</div>
+   </div>
+   <div class="background"></div>
+    <header class="container">
+        <div class="row">
+            <h1 class="col-sm-4">
+                <img src="inc/temi/awesome/images/habbo.png"/>
+            </h1>
+            <div class="col-sm-8 text-right" id="login_box">
+                <input type="text" id="username" placeholder="Username" class="text-input login-input">
+                <input type="password" id="password" placeholder="Password" class="text-input login-input">
+                <input type="submit" class="login-btn" value="{@login_button@}">
+            </div>
+        </div>
+    </header>
+    <section class="jumbotron">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 text-center">
+                    <h1>{@register_box_head@}</h1>
+                    <h3>{@SPC_online_count@}</h3>
+                </div>
+
+                <div id="reg_box" class="col-sm-8 text-center">
+                    <input type="text" id="reg_username" placeholder="Username" class="text-input register-input">
+                    <input type="text" id="reg_mail" placeholder="Email" class="text-input register-input">
+                    <input type="password" id="reg_password" placeholder="Password" class="text-input register-input">
+                    <input type="password" id="reg_password1" placeholder="Ripeti Password" class="text-input register-input">
+                    <input type="submit" class="register-btn" value="{@register_button@}">
+                </div>
+            </div>
+        </div>
+    </section>
+   {@SPC_include_footer@}
+    <script type="text/javascript" src="inc/temi/awesome/js/index.js"></script>
+</body>
+</html>

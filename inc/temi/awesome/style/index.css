@@ -1,0 +1,259 @@
+body{
+    margin:0;
+    padding:0;
+    overflow:auto;
+    background-color:#708ee2;
+}
+
+body::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    background-color: rgba(0,0,0,0.75);
+}
+
+body::-webkit-scrollbar
+{
+    width: 5px;
+}
+
+body::-webkit-scrollbar-thumb
+{
+    border-radius: 5px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: #aae0f5;
+    border:1px solid #000;
+}
+
+.background{
+    background-image: url('../images/jumbotron.jpg');
+    background-size: cover;
+    background-repeat: repeat;
+    -webkit-filter: blur(7px);
+    -moz-filter: blur(7px);
+    -o-filter: blur(7px);
+    -ms-filter: blur(7px);
+    filter: blur(7px);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -1;
+    -webkit-animation: goin 10s linear infinite; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: goin 10s linear infinite; /* Firefox < 16 */
+    -ms-animation: goin 10s linear infinite; /* Internet Explorer */
+    -o-animation: goin 10s linear infinite; /* Opera < 12.1 */
+    animation: goin 10s linear infinite;
+}
+
+@keyframes goin {
+    from { background-position: 0 top; }
+    to   { background-position: -1365px top; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes goin {
+    from { background-position: 0 top; }
+    to   { background-position: -1365px top; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes goin {
+    from { background-position: 0 top; }
+    to   { background-position: -1365px top; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes goin {
+    from { background-position: 0 top; }
+    to   { background-position: -1365px top; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes goin {
+    from { background-position: 0 top; }
+    to   { background-position: -1365px top; }
+}
+
+header{
+    padding:20px;
+    width:100% !important;
+    border-bottom:1px solid rgba(0,0,0,0.75);
+    background-color:rgba(84, 88, 204, 0.5);
+}
+
+header.row, footer.row{
+    display: flex;
+    align-items:center;
+}
+
+
+input{
+    margin:5px;
+    border-radius: 3px;
+    padding: 4px;
+    outline: 0;
+    color:#000;
+    border: 1px solid rgba(0, 0, 0, 0.75);
+}
+
+input.text-input.selected{
+    background-color: rgba(253, 253, 253, 0.9);
+    border-color: #6da6ec;
+}
+
+.login-btn{
+    min-width:10rem;
+    padding: 3px;
+    background-color: rgba(73, 93, 130, 0.57);
+    position:relative;
+    color: #fff;
+    border: 2px solid rgb(158, 185, 234);
+}
+
+.login-btn:hover{
+    background-color: rgba(131, 152, 189, 0.57);
+}
+
+.login-btn:active{
+    top:2px;
+}
+
+#login_box{
+ padding:10px;
+}
+
+#reg_box input{
+    width:70%;
+}
+
+.register-btn{
+    padding: 3px;
+    background-color: rgba(84, 130, 73, 0.57);
+    position: relative;
+    color: #fff;
+    border: 2px solid rgb(184, 234, 158);
+}
+
+.register-btn:hover{
+    background-color:rgba(115, 150, 107, 0.57);
+}
+
+.register-btn:active{
+    top:2px;
+}
+
+.jumbotron{
+    display: flex;
+    align-items: center;
+    background-color:transparent;
+    color: #ffffff;
+    height: 492px;
+    text-shadow: 0.25px 0.25px 0.25px #000000;
+    margin-bottom:0;
+}
+
+footer{
+    border-top:1px solid rgba(0,0,0,0.75);
+    line-height:2.5;
+    width:100% !important;
+    color:#fff;
+    background-color:rgba(84, 88, 204, 0.5);
+    position:fixed;
+    bottom:0;
+}
+footer p{
+    margin:0;
+}
+
+#errors{
+    width:100%;
+    height:30px;
+    position:absolute;
+    top:0;
+    left:0;
+    display:none;
+    color:#fff;
+    text-align:center;
+    line-height:30px;
+    background-color: rgba(169, 60, 60, 0.55);
+    border: solid rgba(119, 39, 39, 0.55);
+    border-width: 0 0 3px 0;
+}
+#compilation_error{
+    width:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    visibility:hidden;
+}
+#connect_error{
+    width:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    visibility:hidden;
+}
+#login_us_notreg{
+    width:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    visibility:hidden;
+}
+#login_pass_error{
+    width:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    visibility:hidden;
+}
+#login_us_banned{
+    width:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    visibility:hidden;
+}
+#register_us_tkn{
+    width:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    visibility:hidden;
+}
+#register_us_char{
+    width:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    visibility:hidden;
+}
+#register_pw_ts{
+    width:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    visibility:hidden;
+}
+#register_pw_dm{
+    width:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    visibility:hidden;
+}
+#register_inv_mail{
+    width:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    visibility:hidden;
+}
+#register_clone{
+    width:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    visibility:hidden;
+}
+

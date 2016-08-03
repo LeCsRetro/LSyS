@@ -1,0 +1,235 @@
+body {
+    left: 0;
+    margin: 0;
+    position: relative;
+    overflow-x:hidden;
+}
+
+body::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    background-color: rgba(0,0,0,0.75);
+}
+
+body::-webkit-scrollbar
+{
+    width: 5px;
+}
+
+body::-webkit-scrollbar-thumb
+{
+    border-radius: 5px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: #aae0f5;
+    border:1px solid #000;
+}
+
+.background{
+    background-image: url('../images/jumbotron.jpg');
+    background-size: cover;
+    background-repeat: repeat;
+    -webkit-filter: blur(7px);
+    -moz-filter: blur(7px);
+    -o-filter: blur(7px);
+    -ms-filter: blur(7px);
+    filter: blur(7px);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -1;
+    -webkit-animation: goin 10s linear infinite; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: goin 10s linear infinite; /* Firefox < 16 */
+    -ms-animation: goin 10s linear infinite; /* Internet Explorer */
+    -o-animation: goin 10s linear infinite; /* Opera < 12.1 */
+    animation: goin 10s linear infinite;
+}
+
+@keyframes goin {
+    from { background-position: 0 top; }
+    to   { background-position: -1365px top; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes goin {
+    from { background-position: 0 top; }
+    to   { background-position: -1365px top; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes goin {
+    from { background-position: 0 top; }
+    to   { background-position: -1365px top; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes goin {
+    from { background-position: 0 top; }
+    to   { background-position: -1365px top; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes goin {
+    from { background-position: 0 top; }
+    to   { background-position: -1365px top; }
+}
+
+.menu {
+    background-color: #202024;
+    left: -285px;
+    height: 100%;
+    position: fixed;
+    width: 285px;
+    color:#fff;
+    overflow-x:auto;
+}
+
+.menu::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    background-color: rgba(0,0,0,0.75);
+}
+
+.menu::-webkit-scrollbar
+{
+    width: 5px;
+}
+
+.menu::-webkit-scrollbar-thumb
+{
+    border-radius: 5px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: #00ccff;
+    border:1px solid #000;
+}
+
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    border-top: 1px solid #636366;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 45px;
+    padding-bottom: 3px;
+    padding-left: 20px;
+    padding-top: 3px;
+}
+
+.last{
+    border:0;
+    border-bottom:1px solid #636366;
+    margin:0;
+}
+
+.menu a {
+    color: #fff;
+    font-size: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.icon-close {
+    cursor: pointer;
+    padding-left: 10px;
+    padding-top: 10px;
+    font-size:3rem;
+    color:#fff;
+}
+
+li.dropdown{
+    padding-left:0;
+    color:#fff;
+    font-size:15px;
+    cursor:pointer;
+}
+
+.sub_menu{
+    display:none;
+}
+
+.jumbotron {
+    display: flex;
+    align-items: center;
+    color:#fff;
+    text-shadow: 0.25px 0.25px 0.25px #000000;
+    background-color: rgba(255, 255, 255, 0.55);
+    border-bottom:1px solid rgba(255,255,255,0.75);
+    padding:10px;
+    margin-bottom:20px;
+}
+
+.icon-menu {
+    color: #fff;
+    cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
+    padding-bottom: 25px;
+    padding-left: 25px;
+    padding-top: 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.icon-menu i {
+    margin-right: 5px;
+}
+
+.info{
+    word-wrap:break-word;
+}
+
+.client-btn{
+    width:60%;
+    padding:8px;
+    background-color: rgba(73, 93, 130, 0.57);
+    position:relative;
+    color: #fff;
+    border: 2px solid rgb(158, 185, 234);
+    border-radius:3px;
+    outline:none;
+	margin-bottom:10px;
+}
+
+.client-btn:hover{
+    background-color: rgba(131, 152, 189, 0.57);
+}
+
+.client-btn:active{
+    top:2px;
+}
+
+section .row img {
+    margin: 0 0 30px;
+    width: 100%;
+}
+
+section.container{
+    padding-bottom:20px;
+}
+
+section .row a{
+    color:#fff;
+    text-shadow: 0.25px 0.25px 0.25px #000000;
+}
+
+.pg{
+width:initial !important;
+}
+
+footer{
+    border-top:1px solid rgba(0,0,0,0.75);
+    line-height:2.5;
+    width:100% !important;
+    color:#fff;
+    background-color:rgba(84, 88, 204, 0.5);
+    position:fixed;
+    bottom:0;
+}
+footer p{
+    margin:0;
+}
