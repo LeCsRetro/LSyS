@@ -13,10 +13,13 @@ $sessione = new sessione($connect, 1); //apro la sessione
 $lang['page'] = 'index'; //definisco la pagina
 $tema = new tema($connect,$lang); //passo i dati al loader
 $tema->head_open($lang['index_title']); // carico il tema
-$tema->dir_include('js','jquery-2.2.0.min.js');
-$tema->dir_include('js','index.js?'.$connect->time());
-$tema->dir_include('style','index.php?'.$connect->time());
+$tema->dir_include('plugin-css','bootstrap-3.3.7-dist/css/bootstrap.min.css');
+$tema->dir_include('plugin-css','font-awesome-4.6.3/css/font-awesome.min.css');
+$tema->dir_include('style','index.css?'.$connect->time());
+$tema->dir_include('js','jquery-3.1.0.min.js');
+$tema->dir_include('plugin-js','bootstrap-3.3.7-dist/js/bootstrap.min.js');
 $tema->head_close();
 
 $tema->load_page();
+
 $connect->close();
